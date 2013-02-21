@@ -1,0 +1,26 @@
+body {
+	background-color: #1291FF;
+}
+
+#leht {
+	max-width: 960px;
+	background-color: white;
+	margin:10px auto;
+	padding: 10px 10px 10px 10px;
+}
+
+#sisu {
+	padding: 10px 10px 0px 10px;
+}
+
+.overflowAuto{
+	overflow: auto;
+}
+
+.btn {
+	float: left;
+}
+
+.hipster {
+	float: right;
+}
