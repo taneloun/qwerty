@@ -2,6 +2,13 @@ body {
 	background-color: #1291FF;
 }
 
+#logo {
+	background-image: url("https://moodle.ut.ee/theme/image.php/utold/theme/1360680254/banner2");
+	background-position: right top;
+	height: 100px;
+	width: 100%;
+}
+
 #leht {
 	max-width: 960px;
 	background-color: white;
@@ -9,11 +16,24 @@ body {
 	padding: 10px 10px 10px 10px;
 }
 
+#menyy {
+	padding-top: 2px;
+}
+
 #sisu {
 	padding: 10px 10px 0px 10px;
 }
 
-.overflowAuto{
+#kook {
+	width: 200px;
+}
+
+.table {
+	vertical-align: top;
+	float: left;
+}
+
+.overflowAuto {
 	overflow: auto;
 }
 
