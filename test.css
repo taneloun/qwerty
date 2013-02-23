@@ -9,7 +9,7 @@ body {
 	width: 100%;
 }
 
-/* Kui laius on v�iksem kui see, siis teeb logo n�htamatuks */
+/* Kui laius on v�iksem kui see, siis teeb logo n�htamatuks */
 @media screen and (max-width: 400px) {
   #logo {
     visibility: hidden;
@@ -31,16 +31,17 @@ body {
 
 #sisu {
 	padding: 10px 10px 0px 10px;
+	overflow: auto;
 }
 
 .kandidaadiPilt {
 	width: 100px;
 	height: 100px;
+	margin: auto;
 }
 
 .kandidaadiPildiKast {
 	border-radius: 8px;
-	-moz-border-radius: 8px; /* Old Firefox */
 	padding: 5px 5px 5px 5px;
 	text-align: center;
 
@@ -55,13 +56,24 @@ body {
 
 #kook {
 	width: 200px;
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 }
 
 #tabeliDiv {
-	display: inline-block;
-	vertical-align: top;
+	overflow: hidden;
+	min-width: 200px;
+}
+
+#pildiKast {
+	height: 300px;
+	width: 300px;
+	float: left;
+	text-align: center;
+}
+
+#v2ljad {
+	overflow: hidden; /*Tänu sellele võtab float elemendist üle jäänud ruumi*/
+	min-width: 200px;
 }
 
 .btn {
@@ -74,5 +86,8 @@ body {
 
 .rounded {
 	border-radius: 8px;
-	-moz-border-radius: 8px; /* Old Firefox */
+}
+
+.puhastaja {
+	clear: both;
 }
