@@ -8,6 +8,7 @@ Test
     media="screen,projection">
 <link rel="stylesheet" type="text/css" href="test.css"
     media="screen,projection">
+<script type="text/javascript" src="css-pop.js"></script>
 </head>
 <body>
 	<div id="leht" class="rounded">
@@ -25,8 +26,7 @@ Test
 		<div id="sisu">
 			<div id="pildiKast">
 				<img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg">
-				<button class="btn btn-small" type="button">Laadi pilt arvutist</button>
-				<button class="btn btn-small" type="button">Laadi pilt veebist</button>
+				<button onclick="popup('popUpDiv')" class="btn btn-small" type="button">Laadi pilt</button>
 			</div>
 			<div id="v2ljad">
 				<form action="" method="" accept-charset="utf-8">
@@ -48,6 +48,11 @@ Test
 			</form>
 			</div>
 		</div>
+		<div id="blanket" style="display:none;"></div>
+		<div id="popUpDiv" style="display:none;">
+    		<a href="#" onclick="popup('popUpDiv')" >Click to Close CSS Pop Up</a>
+		</div>	
+		
 	</div>
 </body>
 </html>
