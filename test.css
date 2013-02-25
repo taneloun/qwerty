@@ -197,16 +197,39 @@ img {
 	width: 300px;
 	float: left;
 	text-align: center;
-	line-height: 300px;
+	display: table;
 }
 
-.vertikaalseltKeskel {
+#pildiTabel {
+	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
+	margin-left: 50px;
+}
+
+#pildiKast img, #pildiKast button {
+	margin-left: 100px;
+}
+
+#pildiKast button {
+	width: 100px;
+	clear: both;
+}
+
+#v2ikePildiKast {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
 }
 
 #v2ljad {
 	overflow: hidden; /*Tänu sellele võtab float elemendist üle jäänud ruumi*/
 	min-width: 200px;
+}
+
+#v2ljad table {
+	width: 100%;
+	vertical-align: middle;
 }
 
 /***/
@@ -293,16 +316,15 @@ h2 {
 }
 
 .popUpDiv {
-	position:fixed;
+	position:absolute;
 	background-color:white;
 	width:400px;
 	height:400px;
 	border:1px solid #000;
 	z-index: 9002;
 	border-radius: 8px;
-	margin: -200px auto auto auto; /* esimene arv on -(height/2) */
+	margin: auto;
 	max-width: 100%;
-	top:50%;
 }
 
 .closeBtn {

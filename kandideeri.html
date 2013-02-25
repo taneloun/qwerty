@@ -11,6 +11,26 @@ Test
 <script type="text/javascript" src="css-pop.js"></script>
 </head>
 <body>
+	<div id="blanket" style="display:none;"></div>
+	<div id="login" class="popUpDiv" style="display:none;">
+		<img class="closeBtn" onclick="popup('login')" src="pildid/close.png" alt="Sulge">
+		<div id="loginBtnDiv">
+			<button id="Facebook" class="loginBtn btn">
+				<img src="pildid/facebook.png" alt="Sisene Facebookiga">
+				Sisene Facebookiga
+			</button><br>
+			<button id="Google" class="loginBtn btn">
+				<img src="pildid/google.png" alt="Sisene Google'iga">
+				Sisene Google'iga
+			</button>
+		</div>
+	</div>
+	<div id="uploadPic" class="popUpDiv" style="display:none;">
+		<img class="closeBtn" onclick="popup('uploadPic')" src="pildid/close.png" alt="Sulge">
+		<div>
+
+		</div>
+	</div>
 	<div id="leht" class="rounded">
 		<div id="logo">
 		
@@ -21,16 +41,52 @@ Test
 			<button class="btn" type="button">Default button</button>
 			<button class="btn" type="button">Default button</button>
 			<button class="btn" type="button">Default button</button>
-			<button class="btn hipster" type="button">Hipster button</button>
+			<button onclick="popup('login')" class="btn hipster" type="button">Sisene</button>
 		</div>
 		<div id="sisu">
 			<div id="pildiKast">
-				<img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg">
-				<button onclick="popup('popUpDiv')" class="btn btn-small" type="button">Laadi pilt</button>
+				<!--div id="v2ikePildiKast">
+					<img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg">
+					<button onclick="popup('uploadPic')" class="btn btn-small" type="button">Laadi pilt</button>
+				</div-->
+				<table id="pildiTabel">
+					<tr><td><img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg"></td></tr>
+					<tr><td><button onclick="popup('uploadPic')" class="btn btn-small" type="button">Laadi pilt</button></td></tr>
+				</table>
 			</div>
 			<div id="v2ljad">
-				<form action="" method="" accept-charset="utf-8">
-				Eesnimi: <input type="text" name="firstname"><br>
+			<form action="#" method="get" accept-charset="utf-8">
+				<table>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Eesnimi:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				
+				<!--input type="text" name="firstname"><br>
 				Perenimi: <input type="text" name="lastname"><br>
 				Eesnimi: <input type="text" name="firstname"><br>
 				Perenimi: <input type="text" name="lastname"><br>
@@ -43,16 +99,14 @@ Test
 				Eesnimi: <input type="text" name="firstname"><br>
 				Perenimi: <input type="text" name="lastname"><br>
 				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
+				Perenimi: <input type="text" name="lastname"><br-->
+				</table>
 				<p><input type="submit" class="btn btn-success" value="Submit" /></p>
+				<button class="btn btn-small" type="button">Laadi pilt</button>
 			</form>
 			</div>
 		</div>
-		<div id="blanket" style="display:none;"></div>
-		<div id="popUpDiv" style="display:none;">
-    		<a href="#" onclick="popup('popUpDiv')" >Click to Close CSS Pop Up</a>
-		</div>	
-		
+
 	</div>
 </body>
 </html>

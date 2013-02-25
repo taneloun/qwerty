@@ -20,12 +20,13 @@ function blanket_size(popUpDivVar) {
 	}
 	var blanket = document.getElementById('blanket');
 	blanket.style.height = blanket_height + 'px';
-	/*var popUpDiv = document.getElementById(popUpDivVar);
-	popUpDiv_height=blanket_height/2-200;//200 is half popup's height
+	var popUpDiv = document.getElementById(popUpDivVar);
+	popUpDiv_height=viewportheight/2-200;//200 is half popup's height
 	if (popUpDiv_height <= 0) {
 		popUpDiv_height = 0;
 	}
-	popUpDiv.style.top = popUpDiv_height + 'px';*/
+	popUpDiv.style.top = popUpDiv_height + 'px';
+	
 }
 function window_pos(popUpDivVar) {
 	if (typeof window.innerWidth != 'undefined') {
