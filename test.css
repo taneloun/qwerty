@@ -1,3 +1,6 @@
+
+
+
 body {
 	background-color: #1291FF;
 }
@@ -22,6 +25,7 @@ body {
 	background-color: white;
 	margin:10px auto;
 	padding: 10px 10px 10px 10px;
+	border-radius: 8px;
 }
 
 #menyy {
@@ -34,10 +38,53 @@ body {
 	overflow: auto;
 }
 
+
+/*Nupud*/
+.btn {
+	float: left;
+	cursor: pointer;
+	
+    padding: 4px 12px;
+    margin-bottom: 0px;
+    line-height: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(230, 230, 230));
+    background-repeat: repeat-x;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgb(179, 179, 179);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.btn:hover, .btn:focus {
+    background-position: 0px -15px;
+    transition: background-position 0.1s linear 0s;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+    background-color: rgb(230, 230, 230);
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgb(0, 109, 204);
+    background-image: linear-gradient(to bottom, rgb(0, 136, 204), rgb(0, 68, 204));
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 68, 204);
+}
+
+/* Kandidaatide nimekirja värk */
 .kandidaadiPilt {
 	width: 100px;
 	height: 100px;
 	margin: auto;
+	
 }
 
 .kandidaadiPildiKast {
@@ -54,9 +101,80 @@ body {
 	color: white;
 }
 
+/* Statistika */
 #kook {
 	width: 200px;
 	float: left;
+}
+
+.kook2 {
+	width: 400px;
+	float: left;
+}
+
+/*Tabel*/
+.table-bordered {
+    border-width: 1px 1px 1px 0px;
+    border-style: solid solid solid none;
+    border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgb(221, 221, 221);
+    border-image: none;
+    border-collapse: separate;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.table {
+    margin-bottom: 20px;
+    width: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    border: 0px none;
+    margin: 0px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid solid solid none;
+    border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgb(221, 221, 221);
+    border-radius: 4px 4px 4px 4px;
+}
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+    background-color: rgb(245, 245, 245);
+}
+.table-bordered th, .table-bordered td {
+    border-left: 1px solid rgb(221, 221, 221);
+}
+.table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    border: 0px none;
+    margin: 0px;
+}
+.table-bordered thead:first-child tr:first-child > th:first-child, .table-bordered tbody:first-child tr:first-child > td:first-child, .table-bordered tbody:first-child tr:first-child > th:first-child {
+    border-top-left-radius: 4px;
+}
+.table-bordered caption + thead tr:first-child th, .table-bordered caption + tbody tr:first-child th, .table-bordered caption + tbody tr:first-child td, .table-bordered colgroup + thead tr:first-child th, .table-bordered colgroup + tbody tr:first-child th, .table-bordered colgroup + tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+    border-top: 0px none;
+}
+.table th {
+    font-weight: bold;
 }
 
 #tabeliDiv {
@@ -64,11 +182,23 @@ body {
 	min-width: 200px;
 }
 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/* Kandideerimise värk */
 #pildiKast {
 	height: 300px;
 	width: 300px;
 	float: left;
 	text-align: center;
+	line-height: 300px;
+}
+
+.vertikaalseltKeskel {
+	vertical-align: middle;
 }
 
 #v2ljad {
@@ -76,16 +206,11 @@ body {
 	min-width: 200px;
 }
 
-.btn {
-	float: left;
-}
+/***/
+
 
 .hipster {
 	float: right;
-}
-
-.rounded {
-	border-radius: 8px;
 }
 
 .puhastaja {
@@ -102,14 +227,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 body {
 	font-family:"Helvetica Neue",helvetica,arial,sans-serif;
-}
-#header_wrapper {
-	background:#282828;
-	height:56px;
-}
-#header {
-	margin:0px auto;
-	width:960px;
+
 }
 h1 {
 	float:left;
@@ -120,6 +238,42 @@ h1 {
 h2 {
 	color:#19677e;
 	font:italic 15px Georgia,times,sans-serif;
+}
+
+/*Sisenemine*/
+
+#loginBtnDiv{
+	width: 200px;
+	margin: auto;
+	line-height: 60px;
+}
+
+.loginBtn {
+	width: 200px;
+	max-width: 100%;
+	height: 50px;
+	border-radius: 4px;
+	display: table;
+	text-align: left;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+
+.loginBtn:hover, .loginBtn:focus {
+	box-shadow: 1px 1px 10px DarkGray inset;
+} 
+
+.loginBtn img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+#Facebook {
+	background: linear-gradient(to bottom, #3c5a98 0%,#2989d8 50%,#207cca 51%,#6d84b3 100%);
+}
+
+#Google {
+	background: linear-gradient(to bottom, #037932 0%,#e4aa0c 100%);
 }
 
 /* Popupi värk */
@@ -133,13 +287,34 @@ h2 {
    width:100%;
 }
 
-#popUpDiv {
+.popUpDiv {
 	position:absolute;
 	background-color:white;
 	width:400px;
 	height:400px;
-	border:5px solid #000;
+	border:1px solid #000;
 	z-index: 9002;
+	border-radius: 8px;
 }
 
-#popUpDiv a {position:relative; top:20px; left:20px}
+.closeBtn {
+	opacity: 0.8;
+	float: right;
+	margin-right: 2px;
+	margin-top: 2px;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+	opacity: 1.0; 	
+}
+
+
+/* Printimise vaade media query abil (CSS3)*/
+@media print {
+	#logo, #menyy {
+		display: none;
+	}
+	#leht {
+		max-width: none;
+	}
+}

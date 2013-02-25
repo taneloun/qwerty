@@ -4,13 +4,28 @@
 <title>
 Test
 </title>
-<link rel="stylesheet" type="text/css" href="bootstrap.css"
-    media="screen,projection">
+<!--link rel="stylesheet" type="text/css" href="bootstrap.css"
+    media="screen,projection"-->
 <link rel="stylesheet" type="text/css" href="test.css"
-    media="screen,projection">
+    media="screen,projection,print">
+<script type="text/javascript" src="css-pop.js"></script>
 </head>
 <body>
-	<div id="leht" class="rounded">
+	<div id="blanket" style="display:none;"></div>
+	<div id="login" class="popUpDiv" style="display:none;">
+		<img class="closeBtn" onclick="popup('login')" src="pildid/close.png" alt="Sulge">
+		<div id="loginBtnDiv">
+			<button id="Facebook" class="loginBtn btn">
+				<img src="pildid/facebook.png" alt="Sisene Facebookiga">
+				Sisene Facebookiga
+			</button><br>
+			<button id="Google" class="loginBtn btn">
+				<img src="pildid/google.png" alt="Sisene Google'iga">
+				Sisene Google'iga
+			</button>
+		</div>
+	</div>
+	<div id="leht">
 		<div id="logo">
 		
 		</div>
@@ -20,7 +35,7 @@ Test
 			<button class="btn" type="button">Default button</button>
 			<button class="btn" type="button">Default button</button>
 			<button class="btn" type="button">Default button</button>
-			<button class="btn hipster" type="button">Hipster button</button>
+			<button onclick="popup('login')" class="btn hipster" type="button">Sisene</button>
 		</div>
 		<div id="sisu">
 			<p class="text-info">
@@ -57,6 +72,8 @@ Test
 				</tr>
 			</table>
 			</div>
+			<img class="kook2" alt="kook" src="http://4photos.net/photosv5/pie_chart__1341418102.jpg">
+			<img class="kook2" alt="kook" src="http://4photos.net/photosv5/pie_chart__1341418102.jpg">
 		</div>
 	</div>
 </body>
