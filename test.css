@@ -293,13 +293,16 @@ h2 {
 }
 
 .popUpDiv {
-	position:absolute;
+	position:fixed;
 	background-color:white;
 	width:400px;
 	height:400px;
 	border:1px solid #000;
 	z-index: 9002;
 	border-radius: 8px;
+	margin: -200px auto auto auto; /* esimene arv on -(height/2) */
+	max-width: 100%;
+	top:50%;
 }
 
 .closeBtn {
