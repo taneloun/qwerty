@@ -4,8 +4,8 @@
 <title>
 Test
 </title>
-<link rel="stylesheet" type="text/css" href="bootstrap.css"
-    media="screen,projection">
+<!--link rel="stylesheet" type="text/css" href="bootstrap.css"
+    media="screen,projection"-->
 <link rel="stylesheet" type="text/css" href="test.css"
     media="screen,projection">
 <script type="text/javascript" src="css-pop.js"></script>
@@ -28,7 +28,10 @@ Test
 	<div id="uploadPic" class="popUpDiv" style="display:none;">
 		<img class="closeBtn" onclick="popup('uploadPic')" src="pildid/close.png" alt="Sulge">
 		<div>
-
+			<form action="demo_form.asp">
+  				Select a file: <input type="file" name="img">
+  				<input type="submit">
+			</form>
 		</div>
 	</div>
 	<div id="leht" class="rounded">
@@ -66,20 +69,24 @@ Test
 					<td><input type="text" name="firstname"></td>
 				</tr>
 				<tr>
-					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td>Erakond:</td>
+					<td><select name="erakond">
+						<option>Juustusööjate keskliit</option>
+						<option>Keskerakond</option>
+						<option>Reformierakond</option>
+					</td>
 				</tr>
 				<tr>
-					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td>Sünniaeg:</td>
+					<td><input type="date" name="synniaeg"></td>
 				</tr>
 				<tr>
-					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td>Sugu:</td>
+					<td><input type="radio" name="sugu" value="mees"> Mees</td>
 				</tr>
 				<tr>
-					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td></td>
+					<td><input type="radio" name="sugu" value="naine"> Naine</td>
 				</tr>
 				<tr>
 					<td>Eesnimi:</td>
@@ -102,7 +109,7 @@ Test
 				Perenimi: <input type="text" name="lastname"><br-->
 				</table>
 				<p><input type="submit" class="btn btn-success" value="Submit" /></p>
-				<button class="btn btn-small" type="button">Laadi pilt</button>
+				<button class="btn btn-small" type="button">Kandideeri</button>
 			</form>
 			</div>
 		</div>
