@@ -12,14 +12,6 @@ body {
 	width: 100%;
 }
 
-/* Kui laius on v�iksem kui see, siis teeb logo n�htamatuks */
-@media screen and (max-width: 360px) {
-  #logo {
-    background-image: url("pildid/logo-v.png");
-    height: 35px;
-  }
-}
-
 #leht {
 	max-width: 960px;
 	background-color: white;
@@ -137,12 +129,13 @@ body {
 }
 
 .kandidaadiPildiKast {
-	border-radius: 8px;
+	border-radius: 5px;
 	padding: 5px 5px 5px 5px;
 	text-align: center;
 
 	display: inline-block;
 	vertical-align: top;
+	cursor: pointer;
 }
 
 .kandidaadiPildiKast:HOVER {
@@ -150,23 +143,17 @@ body {
 	color: white;
 }
 
-.kandidaadiLink {
-	text-decoration: none;
-}
-
 .kandidaadiFilter {
 	float: left;
 }
 
+#details
+
+
 /* Statistika */
 
-#kook {
+#diagram {
 	width: 200px;
-	float: left;
-}
-
-.kook2 {
-	width: 400px;
 	float: left;
 }
 
@@ -473,17 +460,6 @@ h2 {
 	opacity: 1.0; 	
 }
 
-
-/* Printimise vaade media query abil (CSS3)*/
-@media print {
-	#logo, .menu, .kandidaadiFilter {
-		display: none;
-	}
-	#leht {
-		max-width: none;
-	}
-}
-
 .error {
 color: #D8000C;
 background-color: #FFBABA;
@@ -510,4 +486,26 @@ background-position: 10px center;
 
 p {
 	margin: 5px 0 5px 0;
+}
+
+/* Väikse resolutsiooni muudatused */
+@media screen and (max-width: 360px) {
+  #logo {
+    background-image: url("pildid/logo-v.png");
+    height: 35px;
+  }
+  #leht {
+  	margin: auto;
+  	padding: 0;
+  }
+}
+
+/* Printimise vaade media query abil (CSS3)*/
+@media print {
+	#logo, .menu, .kandidaadiFilter {
+		display: none;
+	}
+	#leht {
+		max-width: none;
+	}
 }

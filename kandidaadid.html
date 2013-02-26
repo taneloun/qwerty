@@ -25,6 +25,12 @@ Test
 			</button>
 		</div>
 	</div>
+	<div id="details" class="popUpDiv" style="display:none;">
+		<img class="closeBtn" onclick="popup('details')" src="pildid/close.png" alt="Sulge">
+		<div>
+			<img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg">
+		</div>
+	</div>
 	<div id="leht">
 		<div id="logo">
 		
@@ -68,8 +74,7 @@ Test
 			</div>
 			
 			<h1>Lasnamäe</h1>
-			<a href="test.html" class="kandidaadiLink">
-			<div class="kandidaadiPildiKast">
+			<div class="kandidaadiPildiKast" onclick="popup('details')">
 				<img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg">
 				<p>
 				Edgar Savisaar<br>
@@ -77,7 +82,6 @@ Test
 				Keskerakond<br>
 				</p>
 			</div>
-			</a>
 			<a href="test.html" class="kandidaadiLink">
 			<div class="kandidaadiPildiKast">
 				<img class="kandidaadiPilt" alt="savisaar" src="http://uuseesti.ee/wp-content/uploads/2010/06/AndrusAnsip.jpg">
