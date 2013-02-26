@@ -29,11 +29,6 @@ body {
 	height: auto;
 }
 
-#menyy {
-	padding-top: 2px;
-	overflow: auto;
-}
-
 .menu {
 	width: 100%;
 	background-color: #333;
@@ -367,15 +362,22 @@ h1 {
 	font-size: 200%;
 }
 h2 {
-	color:#19677e;
-	font:italic 100% Georgia,times,sans-serif;
+	font-size: 150%;
 }
 
 /*Sisenemine*/
 
+#login {
+	text-align: center;
+}	
+	
+#login h2 {
+	margin-top: 30px;
+}
+
 #loginBtnDiv{
 	width: 200px;
-	margin: 100px auto;
+	margin: 20px auto;
 	line-height: 60px;
 	overflow: auto;
 }
@@ -448,7 +450,7 @@ h2 {
 
 /* Printimise vaade media query abil (CSS3)*/
 @media print {
-	#logo, #menyy {
+	#logo, .menu, .kandidaadiFilter {
 		display: none;
 	}
 	#leht {

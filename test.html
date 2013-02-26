@@ -14,12 +14,13 @@ Test
 	<div id="blanket" style="display:none;"></div>
 	<div id="login" class="popUpDiv" style="display:none;">
 		<img class="closeBtn" onclick="popup('login')" src="pildid/close.png" alt="Sulge">
+		<h2>Valige meetod sisenemiseks</h2>
 		<div id="loginBtnDiv">
-			<button id="Facebook" class="loginBtn btn">
+			<button id="Facebook" onclick="popup('login')" class="loginBtn btn">
 				<img src="pildid/facebook.png" alt="Sisene Facebookiga">
 				Sisene Facebookiga
 			</button><br>
-			<button id="Google" class="loginBtn btn">
+			<button id="Google" onclick="popup('login')" class="loginBtn btn">
 				<img src="pildid/google.png" alt="Sisene Google'iga">
 				Sisene Google'iga
 			</button>
