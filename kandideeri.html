@@ -25,6 +25,20 @@ Test
 			</button>
 		</div>
 	</div>
+		<div id="uploadPic" class="popUpDiv" style="display:none;">
+		<img class="closeBtn" onclick="popup('uploadPic')" src="pildid/close.png" alt="Sulge">
+			<div class="pildiKast">
+				<table class="pildiTabel">
+					<tr><td><img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg"></td></tr>
+					<tr><td>Palun valige üks kahest meetodist pildi lisamiseks:</td></tr>
+					<form action="#">
+					<tr><td>Valige fail arvutist: <input type="file" name="img"></td></tr>
+					<tr><td>Sisestage veebiaadress: <input type="file" name="img"></td></tr>
+					<tr><td><input type="submit"></td></tr>
+					</form>
+				</table>
+			</div>
+		</div>
 	<div id="leht">
 		<div id="logo">
 		
@@ -41,12 +55,8 @@ Test
 			<br style="clear:left" />
 		</div>
 		<div id="sisu">
-			<div id="pildiKast">
-				<!--div id="v2ikePildiKast">
-					<img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg">
-					<button onclick="popup('uploadPic')" class="btn btn-small" type="button">Laadi pilt</button>
-				</div-->
-				<table id="pildiTabel">
+			<div class="pildiKast">
+				<table class="pildiTabel">
 					<tr><td><img class="kandidaadiPilt" alt="savisaar" src="http://www.compromat.ee/editor_files/Image/SAVISAAR_FOTO/Savisaar_mkm_vaike.jpg"></td></tr>
 					<tr><td><button onclick="popup('uploadPic')" class="btn btn-small" type="button">Laadi pilt</button></td></tr>
 				</table>
@@ -56,11 +66,15 @@ Test
 				<table>
 				<tr>
 					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td><p>Eesnimi</p></td>
 				</tr>
 				<tr>
-					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td>Perenimi:</td>
+					<td><p>Perenimi</p></td>
+				</tr>
+				<tr>
+					<td>Kuvatav nimi:</td>
+					<td><input type="text" name="displayName"></td>
 				</tr>
 				<tr>
 					<td>Erakond:</td>
@@ -72,8 +86,24 @@ Test
 					</td>
 				</tr>
 				<tr>
-					<td>Sünniaeg:</td>
-					<td><input type="date" name="synniaeg"></td>
+					<td>Sünnipäev:</td>
+					<td class="date">
+						<select name="day">
+							<option>Päev</option>
+							<option>2</option>
+							<option>13</option>
+						</select>
+						<select name="month">
+							<option>Kuu</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+						<select name="year">
+							<option>Aasta</option>
+							<option>1992</option>
+							<option>1993</option>
+						</select>
+						</td>
 				</tr>
 				<tr>
 					<td>Sugu:</td>
@@ -88,27 +118,11 @@ Test
 					</td>
 				</tr>
 				<tr>
-					<td>Eesnimi:</td>
-					<td><input type="text" name="firstname"></td>
+					<td>Lisainfo:</td>
+					<td><textarea rows="4" cols="50"></textarea></td>
 				</tr>
-				
-				<!--input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
-				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
-				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
-				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
-				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
-				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br>
-				Eesnimi: <input type="text" name="firstname"><br>
-				Perenimi: <input type="text" name="lastname"><br-->
 				</table>
-				<p><input type="submit" class="btn btn-success" value="Submit" /></p>
-				<button class="btn btn-small" type="button">Kandideeri</button>
+				<p><input type="submit" class="btn" value="Kandideeri" /></p>
 			</form>
 			</div>
 		</div>

@@ -88,6 +88,7 @@ body {
 .btn {
 	float: left;
 	cursor: pointer;
+	border-radius: 2px;
 	
     padding: 4px 12px;
     margin-bottom: 0px;
@@ -302,7 +303,7 @@ img {
 
 
 /* Kandideerimise värk */
-#pildiKast {
+.pildiKast {
 	height: 300px;
 	width: 300px;
 	float: left;
@@ -310,17 +311,17 @@ img {
 	display: table;
 }
 
-#pildiTabel {
+.pildiTabel {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 }
 
-#pildiKast img, #pildiKast button {
+#sisu .pildiKast img, #sisu .pildiKast button {
 	margin-left: 100px;
 }
 
-#pildiKast button {
+#sisu .pildiKast button {
 	width: 100px;
 	clear: both;
 }
@@ -344,6 +345,18 @@ img {
 #v2ljad input[type="radio"]{
 	margin-bottom: 3px;
 	width: auto;
+}
+
+#v2ljad p {
+	font-style: italic;
+}
+
+.date select {
+	width: 70px;
+}
+
+textarea {
+	height: 100px;
 }
 
 /***/
