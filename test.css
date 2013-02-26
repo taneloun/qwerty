@@ -143,6 +143,14 @@ body {
 	color: white;
 }
 
+.kandidaadiLink {
+	text-decoration: none;
+}
+
+.kandidaadiFilter {
+	float: left;
+}
+
 /* Statistika */
 #kook {
 	width: 200px;
