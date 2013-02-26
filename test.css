@@ -2,11 +2,11 @@
 
 
 body {
-	background-color: #1291FF;
+	background-color: #3E4242;
 }
 
 #logo {
-	background-image: url("https://moodle.ut.ee/theme/image.php/utold/theme/1360680254/banner2");
+	background-image: url("http://i.imgur.com/LXdo6tF.png");
 	background-position: right top;
 	height: 100px;
 	width: 100%;
@@ -26,6 +26,7 @@ body {
 	margin:10px auto;
 	padding: 10px 10px 10px 10px;
 	border-radius: 8px;
+	height: auto;
 }
 
 #menyy {
@@ -33,9 +34,43 @@ body {
 	overflow: auto;
 }
 
+.menu {
+	width: 100%;
+	background-color: #333;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.menu ul li {
+	display: inline;
+}
+
+.menu ul li a {
+	float: left;
+	text-decoration: none;
+	color: white;
+	padding: 10.5px 11px;
+	background-color: #333;
+}
+
+.menu ul li a:visited {
+	color: white;
+}
+
+.menu ul li a:hover, menu ul li .current {
+	color: #fff;
+	background-color: #0b75b2;
+}
+
 #sisu {
 	padding: 10px 10px 0px 10px;
 	overflow: auto;
+	margin: auto;
+	min-height: 500px;
 }
 
 
@@ -326,6 +361,7 @@ h2 {
 	width: 200px;
 	margin: auto;
 	line-height: 60px;
+	padding-top:100px;
 }
 
 .loginBtn {
@@ -402,4 +438,19 @@ h2 {
 	#leht {
 		max-width: none;
 	}
+}
+
+.error {
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('error.png');
+}
+
+
+.info, .success, .warning, .error, .validation {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
 }
