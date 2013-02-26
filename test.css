@@ -490,3 +490,11 @@ padding:15px 10px 15px 50px;
 background-repeat: no-repeat;
 background-position: 10px center;
 }
+
+#help {
+	margin: 20px 0px 0px 20px;
+}
+
+p {
+	margin: 5px 0 5px 0;
+}
