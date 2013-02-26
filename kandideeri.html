@@ -7,7 +7,7 @@ Test
 <!--link rel="stylesheet" type="text/css" href="bootstrap.css"
     media="screen,projection"-->
 <link rel="stylesheet" type="text/css" href="test.css"
-    media="screen,projection">
+    media="screen,projection,print">
 <script type="text/javascript" src="css-pop.js"></script>
 </head>
 <body>
@@ -25,16 +25,7 @@ Test
 			</button>
 		</div>
 	</div>
-	<div id="uploadPic" class="popUpDiv" style="display:none;">
-		<img class="closeBtn" onclick="popup('uploadPic')" src="pildid/close.png" alt="Sulge">
-		<div>
-			<form action="demo_form.asp">
-  				Select a file: <input type="file" name="img">
-  				<input type="submit">
-			</form>
-		</div>
-	</div>
-	<div id="leht" class="rounded">
+	<div id="leht">
 		<div id="logo">
 		
 		</div>
@@ -77,6 +68,7 @@ Test
 						<option>Juustusööjate keskliit</option>
 						<option>Keskerakond</option>
 						<option>Reformierakond</option>
+						</select>
 					</td>
 				</tr>
 				<tr>
@@ -85,11 +77,15 @@ Test
 				</tr>
 				<tr>
 					<td>Sugu:</td>
-					<td><input type="radio" name="sugu" value="mees"> Mees</td>
+					<td><input type="radio" name="sugu" value="mees" id="mees">
+						<label for="mees">Mees</label>
+					</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="radio" name="sugu" value="naine"> Naine</td>
+					<td><input type="radio" name="sugu" value="naine" id="naine">
+						<label for="naine">Naine</label>
+					</td>
 				</tr>
 				<tr>
 					<td>Eesnimi:</td>

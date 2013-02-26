@@ -6,17 +6,17 @@ body {
 }
 
 #logo {
-	background-image: url("http://i.imgur.com/LXdo6tF.png");
+	background-image: url("pildid/logo.png");
 	background-position: right top;
 	height: 100px;
 	width: 100%;
 }
 
 /* Kui laius on v�iksem kui see, siis teeb logo n�htamatuks */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   #logo {
-    visibility: hidden;
-    height: 0px;
+    background-image: url("pildid/logo-v.png");
+    height: 35px;
   }
 }
 
@@ -64,6 +64,10 @@ body {
 .menu ul li a:hover, menu ul li .current {
 	color: #fff;
 	background-color: #0b75b2;
+}
+
+.menu br {
+	clear: left;
 }
 
 #sisu {
@@ -135,7 +139,7 @@ body {
 }
 
 .kandidaadiPildiKast:HOVER {
-	background-color: #1291FF;
+	background-color: rgb(11, 117, 178);
 	color: white;
 }
 
@@ -239,6 +243,7 @@ input, textarea, .uneditable-input {
 }
 input, textarea, .uneditable-input {
     width: 206px;
+    max-width: 100%;
 }
 input, button, select, textarea {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -251,7 +256,6 @@ button, input {
     line-height: normal;
 }
 button, input, select, textarea {
-    margin: 0px;
     font-size: 100%;
     vertical-align: middle;
 }
@@ -294,7 +298,6 @@ img {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	margin-left: 50px;
 }
 
 #pildiKast img, #pildiKast button {
@@ -322,6 +325,11 @@ img {
 	vertical-align: middle;
 }
 
+#v2ljad input[type="radio"]{
+	margin-bottom: 3px;
+	width: auto;
+}
+
 /***/
 
 
@@ -346,22 +354,22 @@ body {
 	font-size: 80%;
 }
 h1 {
-	float:left;
-	color:#fff;
-	margin-top:20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 200%;
 }
 h2 {
 	color:#19677e;
-	font:italic 15px Georgia,times,sans-serif;
+	font:italic 100% Georgia,times,sans-serif;
 }
 
 /*Sisenemine*/
 
 #loginBtnDiv{
 	width: 200px;
-	margin: auto;
+	margin: 100px auto;
 	line-height: 60px;
-	padding-top:100px;
+	overflow: auto;
 }
 
 .loginBtn {

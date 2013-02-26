@@ -4,16 +4,28 @@
 <title>
 Test
 </title>
-<link rel="stylesheet" type="text/css" href="bootstrap.css"
-    media="screen,projection">
+<!--link rel="stylesheet" type="text/css" href="bootstrap.css"
+    media="screen,projection"-->
 <link rel="stylesheet" type="text/css" href="test.css"
-    media="screen,projection">
-    <script type="text/javascript" src="js/jquery1.4.2.js"></script>
-	<script type="text/javascript" src="js/jquery-ui-1.8.2.custom.min.js"></script>
-	<script type="text/javascript" src="js/login.js"></script>
+    media="screen,projection,print">
+<script type="text/javascript" src="css-pop.js"></script>
 </head>
 <body>
-	<div id="leht" class="rounded">
+	<div id="blanket" style="display:none;"></div>
+	<div id="login" class="popUpDiv" style="display:none;">
+		<img class="closeBtn" onclick="popup('login')" src="pildid/close.png" alt="Sulge">
+		<div id="loginBtnDiv">
+			<button id="Facebook" class="loginBtn btn">
+				<img src="pildid/facebook.png" alt="Sisene Facebookiga">
+				Sisene Facebookiga
+			</button><br>
+			<button id="Google" class="loginBtn btn">
+				<img src="pildid/google.png" alt="Sisene Google'iga">
+				Sisene Google'iga
+			</button>
+		</div>
+	</div>
+	<div id="leht">
 		<div id="logo">
 		
 		</div>
