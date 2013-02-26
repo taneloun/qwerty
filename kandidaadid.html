@@ -2,10 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
-Test
+e-vali : kandidaadid
 </title>
-<!--link rel="stylesheet" type="text/css" href="bootstrap.css"
-    media="screen,projection"-->
 <link rel="stylesheet" type="text/css" href="test.css"
     media="screen,projection,print">
 <script type="text/javascript" src="css-pop.js"></script>
@@ -14,12 +12,13 @@ Test
 	<div id="blanket" style="display:none;"></div>
 	<div id="login" class="popUpDiv" style="display:none;">
 		<img class="closeBtn" onclick="popup('login')" src="pildid/close.png" alt="Sulge">
+		<h2>Valige meetod sisenemiseks</h2>
 		<div id="loginBtnDiv">
-			<button id="Facebook" class="loginBtn btn">
+			<button id="Facebook" onclick="popup('login')" class="loginBtn btn">
 				<img src="pildid/facebook.png" alt="Sisene Facebookiga">
 				Sisene Facebookiga
 			</button><br>
-			<button id="Google" class="loginBtn btn">
+			<button id="Google" onclick="popup('login')" class="loginBtn btn">
 				<img src="pildid/google.png" alt="Sisene Google'iga">
 				Sisene Google'iga
 			</button>
@@ -38,17 +37,16 @@ Test
 		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="test.html">Esileht</a></li>
-				<li><a href="#" class="current">Kandidaadid</a></li>
+				<li><a href="index.html">Esileht</a></li>
+				<li><a href="kandidaadid.html">Kandidaadid</a></li>
 				<li><a href="tulemused.html">Hääletustulemused</a></li>
-				<li><a href="valimine.html">Valimine</a></li>
 				<li><a href="kandideeri.html">Kandideerimine</a></li>
+				<li><a href="abi.html">Abi</a></li>
 				<li onclick="popup('login')"><a href="#">Sisene</a></li>
 			</ul>
-			<br style="clear:left" />
+			<br>
 		</div>
 		<div id="sisu">
-
 			<div class="searchbar">
 				<ul>
 					<li>
